@@ -57,6 +57,9 @@ inoremap jj <ESC>
 " Shortcut to reload vim config
 nnoremap <leader>r :source ~/.vimrc<cr>
 
+" Project search using ack
+nnoremap <leader>a :Ack 
+
 " Set tabs for mightyape
 autocmd BufNewFile,BufRead /Users/chris/Development/mightyape/* set nowrap ts=4 sw=4 tags=/Users/chris/Development/mightyape/includes/tags colorcolumn=120
 
