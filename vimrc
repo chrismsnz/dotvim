@@ -68,7 +68,7 @@ nnoremap <leader>F :NERDTreeFind<cr>
 autocmd BufNewFile,BufRead /Users/chris/Development/mightyape/* set nowrap ts=4 sw=4 tags=/Users/chris/Development/mightyape/includes/tags colorcolumn=120
 
 " Enable some PHP goodies
-" autocmd FileType php let php_sql_query=1
+autocmd FileType php let php_sql_query=1
 autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=1
 autocmd FileType php let php_folding=0
