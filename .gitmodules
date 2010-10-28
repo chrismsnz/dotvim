@@ -4,3 +4,6 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = git://github.com/adamlogic/ack.vim.git
+[submodule "bundles/nerdtree"]
+	path = bundles/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
