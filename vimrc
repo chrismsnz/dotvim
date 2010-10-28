@@ -35,8 +35,8 @@ set relativenumber
 set undofile
 
 " Options for searching
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
@@ -60,11 +60,15 @@ nnoremap <leader>r :source ~/.vimrc<cr>
 " Project search using ack
 nnoremap <leader>a :Ack 
 
+" Project tree
+nnoremap <leader>f :NERDTreeToggle<cr>
+nnoremap <leader>F :NERDTreeFind<cr>
+
 " Set tabs for mightyape
 autocmd BufNewFile,BufRead /Users/chris/Development/mightyape/* set nowrap ts=4 sw=4 tags=/Users/chris/Development/mightyape/includes/tags colorcolumn=120
 
 " Enable some PHP goodies
-autocmd FileType php let php_sql_query=1
+" autocmd FileType php let php_sql_query=1
 autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=1
 autocmd FileType php let php_folding=0
