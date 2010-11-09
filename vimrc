@@ -31,8 +31,10 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
-set undofile
+if version >= 730
+	set relativenumber
+	set undofile
+endif
 
 " Options for searching
 " nnoremap / /\v
@@ -63,13 +65,15 @@ nnoremap <leader>f :NERDTreeToggle<cr>
 nnoremap <leader>F :NERDTreeFind<cr>
 
 " Set tabs for mightyape
-autocmd BufNewFile,BufRead /Users/chris/Development/mightyape/* set nowrap ts=4 sw=4 tags=/Users/chris/Development/mightyape/includes/tags colorcolumn=120
+autocmd BufNewFile,BufRead /Users/chris/Development/mightyape/* set nowrap ts=4 sw=4 tags=/Users/chris/Development/mightyape/includes/tags
 
 " Enable some PHP goodies
-autocmd FileType php let php_sql_query=1
-autocmd FileType php let php_htmlInStrings=1
+" autocmd FileType php let php_sql_query=1
+" autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=1
 autocmd FileType php let php_folding=0
+autocmd FileType php nnoremap <leader>s :!php -l %<CR>
+autocmd FileType php compiler php
 
 " autocomplete funcs and identifiers for languages
 autocmd FileType python set omnifunc=pythoncomplete#Complete
