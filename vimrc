@@ -4,7 +4,8 @@ call pathogen#runtime_append_all_bundles()
 filetype indent plugin on
 
 " Font and colours
-set guifont=Inconsolata:h14
+"set guifont=Inconsolata:h14
+set gfn=Inconsolata\ 12
 colorscheme mustang
 
 " Enable new features and forget backwards compatibility
@@ -25,16 +26,11 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
-set cursorline
+"set visualbell
 set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-if version >= 730
-	set relativenumber
-	set undofile
-endif
 
 " Options for searching
 " nnoremap / /\v
@@ -64,8 +60,16 @@ nnoremap <leader>a :Ack
 nnoremap <leader>f :NERDTreeToggle<cr>
 nnoremap <leader>F :NERDTreeFind<cr>
 
+" Tag list
+nnoremap <leader>m :TlistToggle<cr>
+let Tlist_Sort_Type = "name"
+let Tlist_Show_One_File = 1
+
 " Set tabs for mightyape
-autocmd BufNewFile,BufRead /Users/chris/Development/mightyape/* set nowrap ts=4 sw=4 tags=/Users/chris/Development/mightyape/includes/tags
+autocmd BufNewFile,BufRead /home/csmith/Development/mightyape/* set nowrap ts=4 sw=4 
+
+" Puppet files
+autocmd BufNewFile,BufRead *.pp  setf puppet
 
 " Enable some PHP goodies
 " autocmd FileType php let php_sql_query=1
