@@ -26,8 +26,7 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-"set visualbell
-set ttyfast
+"set visualbell set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
@@ -59,6 +58,7 @@ nnoremap <leader>a :Ack
 " Project tree
 nnoremap <leader>f :NERDTreeToggle<cr>
 nnoremap <leader>F :NERDTreeFind<cr>
+let NERDTreeIgnore = ['\.pyc$']
 
 " Tag list
 nnoremap <leader>m :TlistToggle<cr>
