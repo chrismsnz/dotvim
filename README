@@ -1,0 +1,16 @@
+VIM dotfiles
+
+1. Clone the repository
+
+cd ~
+git clone git@github.com:chrismsnz/dotvim.git
+
+2. Link the assets
+
+ln -s dotvim .vim
+ln -s .vim/vimrc .vimrc
+
+3. Update the submodules
+
+cd ~/.vim
+git submodule update
