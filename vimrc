@@ -69,7 +69,10 @@ let Tlist_Show_One_File = 1
 autocmd BufNewFile,BufRead /home/csmith/Development/mightyape/* set nowrap ts=4 sw=4 
 
 " Puppet files
-autocmd BufNewFile,BufRead *.pp  setf puppet
+autocmd BufNewFile,BufRead *.pp setf puppet
+
+" Mako
+autocmd BufNewFile,BufRead *.mako setf mako
 
 " Enable some PHP goodies
 " autocmd FileType php let php_sql_query=1
