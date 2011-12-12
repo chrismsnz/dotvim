@@ -6,6 +6,7 @@ filetype plugin indent on
 " Font and colours
 "set guifont=Inconsolata:h14
 set gfn=Inconsolata\ 12
+set t_Co=256
 colorscheme mustang
 
 " Enable new features and forget backwards compatibility
