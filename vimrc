@@ -1,7 +1,7 @@
 " Pathogen setup
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype indent plugin on
+call pathogen#infect()
+syntax on
+filetype plugin indent on
 
 " Font and colours
 "set guifont=Inconsolata:h14
