@@ -54,6 +54,7 @@ nnoremap <leader>r :source ~/.vimrc<cr>
 
 " Project search using ack
 nnoremap <leader>a :Ack 
+let g:ackprg="ack-grep -H --nocolor --nogroup --column" " Required for debian/ubuntu
 
 " Project tree
 nnoremap <leader>f :NERDTreeToggle<cr>
