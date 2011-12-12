@@ -75,6 +75,7 @@ autocmd BufNewFile,BufRead *.pp setf puppet
 autocmd BufNewFile,BufRead *.mako setf mako
 
 " Enable some PHP goodies
+" TODO Move this out to a filetype
 " autocmd FileType php let php_sql_query=1
 " autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=1
