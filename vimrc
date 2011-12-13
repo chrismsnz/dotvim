@@ -57,6 +57,9 @@ nnoremap <leader>r :source ~/.vimrc<cr>
 nnoremap <leader>a :Ack 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column" " Required for debian/ubuntu
 
+" Command-t setup
+let g:CommandTMaxFiles=50000
+
 " Project tree
 nnoremap <leader>f :NERDTreeToggle<cr>
 nnoremap <leader>F :NERDTreeFind<cr>
@@ -68,7 +71,7 @@ let Tlist_Sort_Type = "name"
 let Tlist_Show_One_File = 1
 
 " Set tabs for mightyape
-autocmd BufNewFile,BufRead /home/csmith/Development/mightyape/* set nowrap ts=4 sw=4 
+autocmd BufNewFile,BufRead /home/csmith/Development/mightyape/* set nowrap ts=4 sw=4 wildignore=.git
 
 " Puppet files
 autocmd BufNewFile,BufRead *.pp setf puppet
