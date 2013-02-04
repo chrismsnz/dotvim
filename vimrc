@@ -80,6 +80,8 @@ autocmd BufNewFile,BufRead *.pp setf puppet
 " Mako
 autocmd BufNewFile,BufRead *.mako setf mako
 
+autocmd BufNewFile,BufRead *.go setf go
+
 " Enable some PHP goodies
 " TODO Move this out to a filetype
 " autocmd FileType php let php_sql_query=1
