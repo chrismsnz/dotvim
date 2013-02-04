@@ -44,8 +44,9 @@ set hlsearch
 nnoremap <leader><space> :noh<cr>
 
 " Show invisibles
-"set nolist
-"set listchars=tab:▸\ ,eol:¬
+set list
+" set listchars=tab:▸\ ,eol:¬,trail:.
+set listchars=tab:▸\ ,trail:.
 
 " allow jj to leave insert mode
 inoremap jj <ESC>
