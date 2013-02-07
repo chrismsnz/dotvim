@@ -5,7 +5,7 @@ filetype plugin indent on
 
 " Font and colours
 "set guifont=Inconsolata:h14
-set gfn=Inconsolata\ 12
+set gfn=Inconsolata\ 10
 set t_Co=256
 colorscheme mustang
 
