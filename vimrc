@@ -80,22 +80,6 @@ autocmd BufNewFile,BufRead *.pp setf puppet
 " Mako
 autocmd BufNewFile,BufRead *.mako setf mako
 
+" Go
 autocmd BufNewFile,BufRead *.go setf go
 
-" Enable some PHP goodies
-" TODO Move this out to a filetype
-" autocmd FileType php let php_sql_query=1
-" autocmd FileType php let php_htmlInStrings=1
-autocmd FileType php let php_noShortTags=1
-autocmd FileType php let php_folding=0
-autocmd FileType php nnoremap <leader>s :!php -l %<CR>
-autocmd FileType php compiler php
-
-" autocomplete funcs and identifiers for languages
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType c set omnifunc=ccomplete#Complete
