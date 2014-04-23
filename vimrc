@@ -83,3 +83,8 @@ autocmd BufNewFile,BufRead *.mako setf mako
 " Go
 autocmd BufNewFile,BufRead *.go setf go
 
+" Tex classes
+autocmd BufNewFile,BufRead *.cls setf tex
+
+" Django
+autocmd BufNewFile,BufRead *.html setf htmldjango
