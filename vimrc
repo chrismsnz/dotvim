@@ -44,6 +44,7 @@ nnoremap <leader><space> :noh<cr>
 set scrolloff=3
 set backspace=indent,eol,start
 set nonumber
+set numberwidth=4
 nnoremap <leader>n :set number!<CR>
 nnoremap <leader>N :set relativenumber!<CR>
 set autoread
