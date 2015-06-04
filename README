@@ -13,5 +13,11 @@ ln -s .vim/vimrc .vimrc
 3. Update the submodules
 
 cd ~/.vim
-git submodule init
-git submodule update
+git submodule update --init
+
+
+Want to update existing submodules?
+
+git submodule foreach git pull origin master
+
+and pray
