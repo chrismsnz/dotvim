@@ -1,4 +1,5 @@
 VIM dotfiles
+============
 
 1. Clone the repository
 
@@ -16,8 +17,20 @@ cd ~/.vim
 git submodule update --init
 
 
-Want to update existing submodules?
 
-git submodule foreach git pull origin master
+Other stuff
+-----------
+Want to update existing bundle?
+- git submodule foreach git pull origin master
 
-and pray
+Want to add a bundle?
+- git submodule add <repo> bundle/<name>
+- commit
+
+Want to delete an existing bundle?
+- Delete from .gitmodules
+- Delete from .git/config
+- Delete from .git/modules/<name>
+- git rm --cached bundles/<name>
+- rm -rf bundles/<name>
+- commit
