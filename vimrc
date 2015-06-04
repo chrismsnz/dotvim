@@ -8,7 +8,6 @@ filetype indent plugin on
 
 " Syntax highlighting
 syntax on
-set background=dark
 colorscheme molokai
 
 " Custom leader key
