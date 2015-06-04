@@ -9,7 +9,7 @@ filetype indent plugin on
 " Syntax highlighting
 syntax on
 set background=dark
-colorscheme sahara
+colorscheme molokai
 
 " Custom leader key
 let mapleader=","
